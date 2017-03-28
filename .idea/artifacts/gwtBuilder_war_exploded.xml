@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="gwtBuilder:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/gwtBuilder_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="gwtBinder/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="gwtBinder" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$USER_HOME$/Downloads/gwt-2.8.0/gwt-servlet.jar" />
+        </element>
+      </element>
+      <element id="gwt-compiler-output" facet="gwtBinder/gwt/GWT" />
+    </root>
+  </artifact>
+</component>

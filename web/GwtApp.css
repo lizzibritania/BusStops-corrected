@@ -1,0 +1,37 @@
+body {
+    alignment: center;
+    background-color: lightsteelblue;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: small;
+    margin: 8px;
+}
+
+.helloWidgetPanel {
+    font-weight:bold;
+    color:green;
+}
+.listBoxStyle {
+    color: red;
+}
+.main{ font-family: "Comic Sans MS";
+color: darkmagenta;
+    background-color: skyblue;
+    alignment: center;
+}
+.busNumberColumn
+{background-color: skyblue; color: darkmagenta;align-content: center}
+.firstStopColumn
+{background-color: skyblue; color: darkmagenta; align-content: center}
+.cent{
+    alignment: center; margin-left: 35%;margin-right: 30%; text-align: center;background-color: lavender;
+}
+    .centr{
+        alignment: center; margin-left: 30%;margin-right: 30%; text-align: center;background-color: lavender;
+    }
+.table{
+    alignment: center;margin-left: 35%;margin-right: 30%;  text-align: center;background-color: lavender;
+}
+.new{   alignment: center; margin-left: 35%;margin-right: 30%; text-align: center;background-color: lavender;
+text-decoration-color: blueviolet; text-align-all: center; font-family: "Comic Sans MS"}
+.button{background-color: skyblue; color: darkmagenta;align-content: center; font-family: "Comic Sans MS"}

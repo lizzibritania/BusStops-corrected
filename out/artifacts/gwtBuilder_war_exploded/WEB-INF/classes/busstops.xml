@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<busStop>
+<BusStopInfo>
+<busNumber> 707 </busNumber>
+<firstStop> Maryland</firstStop>
+<lastStop> Laland</lastStop>
+<xTime>22:22 </xTime>
+</BusStopInfo>
+    <BusStopInfo>
+        <busNumber> 405 </busNumber>
+        <firstStop> Caryland</firstStop>
+        <lastStop> Loland</lastStop>
+        <xTime>13:12 </xTime>
+    </BusStopInfo>
+
+    <BusStopInfo>
+        <busNumber> 474 </busNumber>
+        <firstStop> Varyland</firstStop>
+        <lastStop> Koland</lastStop>
+        <xTime>14:12 </xTime>
+    </BusStopInfo>
+
+    <BusStopInfo>
+        <busNumber> 86 </busNumber>
+        <firstStop> Paryland</firstStop>
+        <lastStop> Poland</lastStop>
+        <xTime>22:09 </xTime>
+    </BusStopInfo>
+    <BusStopInfo>
+        <busNumber> 407 </busNumber>
+        <firstStop> Caryland</firstStop>
+        <lastStop> Loland</lastStop>
+        <xTime>22:15 </xTime>
+    </BusStopInfo>
+    <BusStopInfo>
+        <busNumber> 408 </busNumber>
+        <firstStop> Caryland</firstStop>
+        <lastStop> Loland</lastStop>
+        <xTime>22:19 </xTime>
+    </BusStopInfo>
+    <BusStopInfo>
+        <busNumber> 409 </busNumber>
+        <firstStop> Caryland</firstStop>
+        <lastStop> Loland</lastStop>
+        <xTime>22:19 </xTime>
+    </BusStopInfo>
+    <BusStopInfo>
+        <busNumber> 410 </busNumber>
+        <firstStop> Caryland</firstStop>
+        <lastStop> Loland</lastStop>
+        <xTime>22:15 </xTime>
+    </BusStopInfo>
+    <BusStopInfo>
+        <busNumber> 411 </busNumber>
+        <firstStop> Caryland</firstStop>
+        <lastStop> Loland</lastStop>
+        <xTime>22:12 </xTime>
+    </BusStopInfo>
+    <BusStopInfo>
+        <busNumber> 412 </busNumber>
+        <firstStop> Yaryland</firstStop>
+        <lastStop> Joland</lastStop>
+        <xTime>22:52 </xTime>
+    </BusStopInfo>
+    <BusStopInfo>
+        <busNumber> 413</busNumber>
+        <firstStop> Varyland</firstStop>
+        <lastStop> Koland</lastStop>
+        <xTime>22:22 </xTime>
+    </BusStopInfo>
+
+    <BusStopInfo>
+        <busNumber> 4432</busNumber>
+        <firstStop> Varyland</firstStop>
+        <lastStop> Koland</lastStop>
+        <xTime>22:32 </xTime>
+    </BusStopInfo>
+
+
+    <BusStopInfo>
+        <busNumber> 4193</busNumber>
+        <firstStop> Jaryland</firstStop>
+        <lastStop> Ooland</lastStop>
+        <xTime>12:32 </xTime>
+    </BusStopInfo>
+
+    <BusStopInfo>
+        <busNumber> 213</busNumber>
+        <firstStop> Aaryland</firstStop>
+        <lastStop> Coland</lastStop>
+        <xTime>14:12 </xTime>
+    </BusStopInfo>
+    <BusStopInfo>
+        <busNumber> 213</busNumber>
+        <firstStop> Aaryland</firstStop>
+        <lastStop> Coland</lastStop>
+        <xTime>12:12 </xTime>
+    </BusStopInfo>
+
+
+</busStop>
