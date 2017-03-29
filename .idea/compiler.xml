@@ -21,7 +21,7 @@
         <module name="gwtBuinder" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.7">
       <module name="gwtBinder" target="1.7" />
     </bytecodeTargetLevel>
   </component>
