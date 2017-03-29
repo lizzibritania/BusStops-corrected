@@ -9,6 +9,7 @@ import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerConfigurationException;
 import javax.xml.transform.TransformerException;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -130,6 +131,33 @@ public class GwtAppServiceImpl extends RemoteServiceServlet implements GwtAppSer
         Collections.sort(busList,  TimeComparator);
         return busList;
     }
+
+    public List<BusStopInfo> filtration( String lookup) {
+        List<BusStopInfo> table = null;
+        try {
+            table = busService.getBusStopInfo();
+        } catch (ParserConfigurationException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (SAXException e) {
+            e.printStackTrace();
+        }
+        List<BusStopInfo> filtered = new ArrayList<>();
+        if (!table.isEmpty()) {
+            for (BusStopInfo busStopInfo : table) {
+                if ((busStopInfo.getBusNumber().toLowerCase().contains(lookup.toLowerCase()))||
+                (busStopInfo.getFirstStop().toLowerCase().contains(lookup.toLowerCase()))
+                        || (busStopInfo.getLastStop().toLowerCase().contains(lookup.toLowerCase()))
+                        || (busStopInfo.getxTime().toLowerCase().contains(lookup.toLowerCase())) )
+                    filtered.add(busStopInfo);
+                }
+            }
+
+
+        return filtered;
+    }
+
     public static final Comparator<BusStopInfo> TimeComparator= new Comparator<BusStopInfo>() {
         @Override
         public int compare(BusStopInfo busStopInfo, BusStopInfo t1) {

@@ -24,15 +24,19 @@ public class GwtApp implements EntryPoint {
     public String number, fstop, lstop, etime;
     public Label eNum, eFstop, eLstop, xTime;
     public BusStopInfo newstop = new BusStopInfo("1", "2", "3", "4");
-    public Button AddNewBus;
+    public Button FindBus;
+    public TextBox lookup;
+    public String textlookup;
     public Button close;
     public TextBox busNumb;
     public List<BusStopInfo> busStopList;
+
     VerticalPanel deleteBus = new VerticalPanel();
 
     public void onModuleLoad() {
         final GwtAppServiceAsync createService = GWT.create(GwtAppService.class);
         final GwtAppServiceAsync fornew = GWT.create(GwtAppService.class);
+
         final AsyncCallback<List<BusStopInfo>> sorter= new AsyncCallback<List<BusStopInfo>>() {
             @Override
             public void onFailure(Throwable caught) {
@@ -48,6 +52,7 @@ public class GwtApp implements EntryPoint {
                 for (BusStopInfo busStopInfo : sortedList ) {
                     list.add(busStopInfo);
                     table.redraw();
+
                 }
             }
         };
@@ -63,6 +68,33 @@ public class GwtApp implements EntryPoint {
                 if (result == null) {
                     Window.alert("Error in .xml file");
                 } else {
+                    lookup = new TextBox();
+                    RootPanel.get().add(lookup);
+                    textlookup=lookup.getText();
+                    Button filtr = new Button("Find bus", new ClickHandler() {
+                        public void onClick(ClickEvent event) {
+                           createService.filtration(textlookup, new AsyncCallback<List<BusStopInfo>>() {
+                               @Override
+                               public void onFailure(Throwable caught) {
+                                   Window.alert("filtering failed");
+                               }
+
+                               @Override
+                               public void onSuccess(List<BusStopInfo> result) {
+                                   List <BusStopInfo> sortedList = result;
+                                   ListDataProvider<BusStopInfo> dataProvider = new ListDataProvider<BusStopInfo>();
+                                   dataProvider.addDataDisplay(table);
+                                   List<BusStopInfo> list = dataProvider.getList();
+                                   for (BusStopInfo busStopInfo : sortedList ) {
+                                       list.add(busStopInfo);
+                                       table.redraw();
+
+                                   }
+                               }
+                           });
+                        }
+                    });
+                    RootPanel.get().add(filtr);
                     busStopList = result;
                     TextColumn<BusStopInfo> busNumberColumn = new TextColumn<BusStopInfo>() {
                         @Override

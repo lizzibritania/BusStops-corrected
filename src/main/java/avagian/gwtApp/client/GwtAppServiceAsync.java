@@ -26,4 +26,6 @@ public interface GwtAppServiceAsync {
     void sortByLstop(List<BusStopInfo> listOfBuses, AsyncCallback<List<BusStopInfo>> async) ;//throws IOException, SAXException, ParserConfigurationException;
 
     void sortByTime(List<BusStopInfo> listOfBuses, AsyncCallback<List<BusStopInfo>> async);// throws IOException, SAXException, ParserConfigurationException;
+
+    void filtration(String lookup, AsyncCallback<List<BusStopInfo>> async);
 }

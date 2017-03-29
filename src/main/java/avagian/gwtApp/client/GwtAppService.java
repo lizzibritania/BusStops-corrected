@@ -23,4 +23,5 @@ public interface GwtAppService extends RemoteService {
 
     List<BusStopInfo> sortByLstop(List<BusStopInfo> listOfBuses) ;//throws IOException, SAXException, ParserConfigurationException;
     List<BusStopInfo>  sortByTime(List<BusStopInfo> listOfBuses) ;//throws IOException, SAXException, ParserConfigurationException;
+    List<BusStopInfo> filtration( String lookup);
 }
