@@ -68,15 +68,15 @@ public class GwtApp implements EntryPoint {
                 if (result == null) {
                     Window.alert("Error in .xml file");
                 } else {
-                    lookup = new TextBox();
+                   /* lookup = new TextBox();
                     RootPanel.get().add(lookup);
-                    textlookup=lookup.getText();
+                   textlookup=lookup.getText();
                     Button filtr = new Button("Find bus", new ClickHandler() {
                         public void onClick(ClickEvent event) {
                            createService.filtration(textlookup, new AsyncCallback<List<BusStopInfo>>() {
-                               @Override
-                               public void onFailure(Throwable caught) {
-                                   Window.alert("filtering failed");
+                              @Override
+                              public void onFailure(Throwable caught) {
+                                  Window.alert("filtering failed");
                                }
 
                                @Override
@@ -94,7 +94,7 @@ public class GwtApp implements EntryPoint {
                            });
                         }
                     });
-                    RootPanel.get().add(filtr);
+                    RootPanel.get().add(filtr);*/
                     busStopList = result;
                     TextColumn<BusStopInfo> busNumberColumn = new TextColumn<BusStopInfo>() {
                         @Override
